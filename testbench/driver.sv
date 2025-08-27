@@ -88,7 +88,6 @@ class fifo_driv extends uvm_driver#(fifo_trans);
     it.full  = intf.full;
     it.empty = intf.empty;
 
-    // Handshake done
     seq_item_port.item_done();
   endtask
 endclass
