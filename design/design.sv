@@ -46,7 +46,6 @@ module FIFO #(
 
   // Status flags
   assign empty = (wptr == rptr);
-  assign full  = (wptr[ADDR_WIDTH-1:0] == rptr[ADDR_WIDTH-1:0]) &&
-                 (wptr[ADDR_WIDTH] != rptr[ADDR_WIDTH]);
+  assign full  = (wptr[ADDR_WIDTH-1:0] == rptr[ADDR_WIDTH-1:0]) && (wptr[ADDR_WIDTH] != rptr[ADDR_WIDTH]);
 
 endmodule
