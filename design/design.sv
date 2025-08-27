@@ -28,7 +28,7 @@ module FIFO (
       if (wn && !full && rn && !empty) begin
    		wptr <= wptr + 1;
    		rptr  <= rptr + 1;
-end
+      end
     end
   end
 
